@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    {% from "includes/formmakro.html" import render_field %}
+
+ <h3>Kayıt Ol</h3> 
+ <hr>
+ <form method = "post">
+    {{ render_field(form.name) }}
+    {{ render_field(form.username) }}
+    {{ render_field(form.email) }}
+    {{ render_field(form.password) }}
+    {{ render_field(form.confirm) }}
+    <button name="button" type="submit" >Kayıt ol</button>
+
+ </form> <br>
+</body>
+</html>
